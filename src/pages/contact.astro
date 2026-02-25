@@ -1,15 +1,12 @@
 ---
 import Layout from "../layouts/layout.astro";
 import { Navbar4 } from "../components/shadcnblocks/navbar/navbar4";
-import { Careers3 } from "../components/shadcnblocks/careers/careers3";
+import { Contact10 } from "../components/shadcnblocks/contact/contact10";
 import { Footer6 } from "../components/shadcnblocks/footer/footer6";
 ---
 
 <Layout>
-  <div class="mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-10">
-    <Navbar4 client:visible />
-    <Careers3 client:visible />
-  </div>
-
+  <Navbar4 client:visible />
+  <Contact10 client:visible />
   <Footer6 client:visible />
 </Layout>

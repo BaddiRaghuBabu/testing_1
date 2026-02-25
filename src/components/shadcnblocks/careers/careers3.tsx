@@ -1,5 +1,5 @@
 import { ArrowRight, MapPin } from "lucide-react";
-import { Badge } from "../../ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 const jobs = [
   {

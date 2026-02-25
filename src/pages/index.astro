@@ -1,10 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-
+import Layout from "../layouts/layout.astro";
+import { Navbar4 } from "../components/shadcnblocks/navbar/navbar4";
+import { Feature290 } from "../components/shadcnblocks/index/feature290";
+import { Compatibility } from "../components/shadcnblocks/index/compatibility";
+import { Testimonial30 } from "../components/shadcnblocks/index/testimonial30";
+import { ChartCardsSection } from "../components/shadcnblocks/index/chart-cards-section";
+import { Feature214 } from "../components/shadcnblocks/index/feature214";
+import { Gallery35 } from "../components/shadcnblocks/index/gallery35";
+import { Team11 } from "../components/shadcnblocks/index/team11";
+import { Cta17 } from "../components/shadcnblocks/index/cta17";
+import { Footer6 } from "../components/shadcnblocks/footer/footer6";
 ---
 
 <Layout>
-	<Welcome />
+  <Navbar4 client:visible />
+
+  <main class="mx-auto w-full max-w-[1400px] px-4 sm:px-6 lg:px-10">
+    <Feature290 client:visible />
+    <Compatibility client:visible />
+    <Testimonial30 client:visible />
+    <ChartCardsSection client:visible />
+    <Feature214 client:visible />
+    <Gallery35 client:visible />
+    <Team11 client:visible />
+    <Cta17 client:visible />
+  </main>
+
+  <Footer6 client:visible />
 </Layout>
